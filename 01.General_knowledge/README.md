@@ -85,7 +85,7 @@ LD_LIBRARY_PATH="$PWD/lib" ./app/app_dynamic
 Cả hai phải in ra:
 
 ```text
-Hello from library!
+Hello, I am Le Duc Manh!
 ```
 
 `LD_LIBRARY_PATH="$PWD/lib"` giúp bản động tìm thư viện trong `lib/` lúc chạy.
