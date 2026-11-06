@@ -1,5 +1,29 @@
-program read a number character of a file at any point ( SET , CUR , END)
+# Read File at a Specified Position
 
-how to run ?
-1.run command  "make all"
-2. "./t <link_to_file_des> <point_start_read> <number_charcter_read> <SET|CUR|END> "
+Read a specified number of bytes from a file using `SET`, `CUR`, or `END` as the reference point.
+
+## Build
+
+```bash
+make all
+```
+
+## Run
+
+```bash
+./t <file_path> <offset> <number_bytes> <SET|CUR|END>
+```
+
+- `file_path`: Path to the file.
+- `offset`: Byte offset relative to the selected reference point.
+- `number_bytes`: Number of bytes to read.
+- `SET`: Beginning of the file.
+- `CUR`: Current file position.
+- `END`: End of the file.
+
+## Example
+
+```bash
+./t test.txt 5 10 SET
+./t test.txt -10 10 END
+```
